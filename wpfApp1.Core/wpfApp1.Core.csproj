@@ -13,4 +13,8 @@
     </COMReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Contoso.Util.AppLogger" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>

@@ -32,6 +32,7 @@ namespace WpfApp1
         {
             sw.SetStudentName();
             sw.OnPropertyChanged(nameof(sw.StudentName));
+            
         }
     }
 }

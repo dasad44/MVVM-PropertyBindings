@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SSYHd20cZgzCthx3kWYSbFzPznogAQL45SR/v6rQbHQ9Srhy94KKIlaBfqUfFIORK8ZZwQhG4VvmooxXTVq/Zw==",
+  "dgSpecHash": "Hq6q6BJuqAUXfJuSof5saMuK2sl8XKsTBccl3jcThx5dH28XRfwPldOX/EOSXafKOgWEvzmpHGapf0cnhjoxlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dawid.sokol\\source\\repos\\MVVM-PropertyBindings\\WpfApp1\\WpfApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dawid.sokol\\.nuget\\packages\\contoso.util.applogger\\1.0.0\\contoso.util.applogger.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

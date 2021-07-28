@@ -1,11 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Contoso.Util.AppLogger/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AppLogger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AppLogger.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Contoso.Util.AppLogger/1.0.0": {
+      "sha512": "LKLsGuoR5DruwSecl7aGIpQY+6UBRmktEU30d0q/zcqam/GJfokmr2UxOP0nPpiwtjGTlzMQpkAuBb+B7R/SiQ==",
+      "type": "package",
+      "path": "contoso.util.applogger/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contoso.util.applogger.1.0.0.nupkg.sha512",
+        "contoso.util.applogger.nuspec",
+        "lib/netcoreapp3.1/AppLogger.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Contoso.Util.AppLogger >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dawid.sokol\\.nuget\\packages\\": {},
@@ -53,6 +78,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Contoso.Util.AppLogger": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

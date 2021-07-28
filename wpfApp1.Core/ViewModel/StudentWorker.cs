@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using AppLogger;
 using wpfApp1.Core.Workers;
 
 namespace wpfApp1.Core.ViewModel
@@ -12,13 +13,8 @@ namespace wpfApp1.Core.ViewModel
         public void SetStudentName()
         {
             StudentName = StudentWorkerProgress.GetStudentName();
+            Logger l = new Logger();
+            l.Log("dsadas");
         }
-
-
-        public void ShowUserMessage(string messageText)
-        {
-            MessageBox.Show(messageText);
-        }
-
     }
 }

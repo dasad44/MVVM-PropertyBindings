@@ -2,9 +2,21 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "Contoso.Util.AppLogger/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AppLogger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AppLogger.dll": {}
+        }
+      },
       "wpfApp1.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Contoso.Util.AppLogger": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/wpfApp1.Core.dll": {}
         },
@@ -15,6 +27,18 @@
     }
   },
   "libraries": {
+    "Contoso.Util.AppLogger/1.0.0": {
+      "sha512": "LKLsGuoR5DruwSecl7aGIpQY+6UBRmktEU30d0q/zcqam/GJfokmr2UxOP0nPpiwtjGTlzMQpkAuBb+B7R/SiQ==",
+      "type": "package",
+      "path": "contoso.util.applogger/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contoso.util.applogger.1.0.0.nupkg.sha512",
+        "contoso.util.applogger.nuspec",
+        "lib/netcoreapp3.1/AppLogger.dll"
+      ]
+    },
     "wpfApp1.Core/1.0.0": {
       "type": "project",
       "path": "../wpfApp1.Core/wpfApp1.Core.csproj",
